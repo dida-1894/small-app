@@ -1,0 +1,46 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='msg'>
+    <text>公告：我告诉你我告诉你我告诉你我告诉你</text>
+  </view>
+  <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">  
+      <block wx:for="{{movies}}" wx:for-index="index">  
+        <swiper-item>  
+          <image src="{{item.url}}" class="slide-image" mode="aspectFill"/>  
+        </swiper-item>  
+      </block>  
+  </swiper>
+  <view class='search'>
+    <input type='text' placeholder='搜索'></input>
+  </view>
+  <view class='deal'>
+    <image mode='aspectFill' src='../../assets/1-index_07.gif'></image>
+    <text class='title'>{{deal.title}}</text>
+    <view class='deal-img'>
+      <image mode='aspectFill' src='../../assets/1-index_10.gif'></image>
+    </view>
+  </view>
+  <view class='products'>
+    <view class='pro-title'>
+      <image src='{{phones.tinyImg}}' mode='aspectFit'></image>
+      <text>{{phones.proName}}</text>
+    </view>
+    <view class="items" class='pro-item'>
+      <view wx:for="{{ph_items}}" class='p-i-item'>
+        <image src='{{item.src}}' mode='aspectFit'></image>
+        <text>${{item.price}}</text>
+      </view>
+    </view>
+    <view class='pro-title'>
+      <image src='{{laps.tinyImg}}' mode='aspectFit'></image>
+      <text>{{laps.proName}}</text>
+    </view>
+    <view class="items" class='pro-item'>
+      <view wx:for="{{la_items}}" class='p-i-item'>
+        <image src='{{item.src}}' mode='aspectFit'></image>
+        <text>${{item.price}}</text>
+      </view>
+    </view>
+
+  </view>
+</view>

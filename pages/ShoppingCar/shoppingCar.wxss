@@ -1,0 +1,66 @@
+.container{
+  width: 100%;
+  height: 100%;
+  background-color: #ccc;
+}
+.ii{
+  padding: 20px 10px;
+  background-color: #fff;
+  position: relative;
+}
+.ii radio{
+  position: absolute; 
+  margin-top: 40px;
+}
+.ii image{
+  width: 80px;
+  height: 100px;
+  margin-left: 35px;
+} 
+.buyMsg{
+  float: right;
+  font-size: 14px;
+}
+.buyMsg .name{
+  font-size: 18px;
+  font-weight: 400;
+  padding: 5px 0px;
+}
+.buyMsg .msg{
+  color: #ccc;
+  padding: 15px 0px 30px 0px;
+}
+.buyMsg .price{
+  float: right;
+  font-size: 16px;
+  color: red;
+}
+.nav-bottom{
+  position: fixed;
+  bottom: 0px;
+  /* padding: 20px; */
+  width: 100%;
+  background-color: #fff;
+}
+.btn{
+  float: right;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 0px;
+}
+.count{
+  background-color: blue;
+}
+.writter{
+  background-color: red;
+}
+.nav-bottom radio{
+  margin-top: 20px;
+  font-size: 14px;
+  margin-right: 20px
+}
+.nav-bottom text{
+  font-size: 14px;
+  color: red;
+  margin-top: 20px;
+}

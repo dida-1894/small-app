@@ -1,0 +1,109 @@
+/**index.wxss**/
+.swiper{
+  width: 100%;
+  height: 200px;
+  background-color: #298;
+}
+.search{
+  width: cacl(100% - 20px);
+  padding: 10px;
+  background-color: #eee;
+}
+.search input{
+  width: cacl(100% - 20px);
+  border: 0px;
+  border-radius: 3px;
+  text-align: center;
+  background-color: #fff;
+  font-size: 12px;
+}
+.pro-title{
+  text-align: center;
+  height: 40px;
+  padding-top: 1px;
+  position: relative;
+}
+ .pro-title image{
+  width: 20px;
+  height: 38px;
+}
+.pro-title text{
+  line-height: 2;
+  margin-left: 20px;
+  font-size: 12px;
+  color: #ccc;
+  position: absolute;
+  top: 10px;
+}
+.pro-item{
+  width: 100%;
+  overflow: auto;
+}
+.pro-item .p-i-item{
+  width: 33%;
+  text-align: center;
+  float: left;
+}
+.p-i-item image{
+  width: 100px;
+  height: 100px;
+}
+.p-i-item text{
+  color: #ef8a70;
+  font-size: 14px;
+}
+.msg{
+  padding: 10px;
+  color: #fff;
+  background-color: #ef8a70;
+  font-size: 12px;
+}
+.swiper {
+  height: 400rpx;
+  width: 100%;
+}
+.swiper image {
+  height: 100%;
+  width: 100%;
+}
+.deal{
+  font-size: 16px;
+  color: #327;
+  padding: 10px;
+  background-size: 10px 10px;
+  border-bottom: 3px solid #eee;
+}
+.deal image{
+  width: 30px;
+  height: 20px;
+  vertical-align:middle;
+  
+}
+.deal text{
+  vertical-align:middle;
+  
+}
+.deal-img image{
+  width: 150px;
+  height: 70px;
+}
+.deal-img{
+  margin: 20px 0px;
+}
+.sale{
+  padding: 10px;
+  background-color: #f9c5c5;
+}
+.sale text{
+  font-size: 14px;
+  color: #fff;
+}
+.sale image{
+  width: 120px;
+  height: 90px;
+}
+.sale-item{
+  text-align: center;
+  color: red;
+  font-weight: bolder;
+}

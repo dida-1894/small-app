@@ -1,0 +1,43 @@
+<view class=''>
+  <view class='search'>
+    <input type='text' placeholder='搜索'></input>
+  </view>
+  <view class='left'>
+    <text wx:for="{{list}}">{{item.name}}</text>
+  </view>
+  <view class='right'>
+    <view class='ii'>
+      <view class='pro-title'>
+        <image src='{{phones.tinyImg}}' mode='aspectFit'></image>
+        <text>{{phones.proName}}</text>
+      </view>
+      <view class="items" class='pro-item'>
+        <view wx:for="{{ph_items}}" class='p-i-item'>
+          <image src='{{item.src}}' mode='aspectFit'></image>
+        </view>
+      </view>
+    </view>
+    <view class='ii'>
+      <view class='pro-title'>
+        <image src='{{laps.tinyImg}}' mode='aspectFit'></image>
+        <text>{{laps.proName}}</text>
+      </view>
+      <view class="items" class='pro-item'>
+        <view wx:for="{{la_items}}" class='p-i-item'>
+          <image src='{{item.src}}' mode='aspectFit'></image>
+        </view>
+      </view>
+    </view>
+    <view class='ii no-border'>
+      <view class='pro-title'>
+        <image src='{{servers.tinyImg}}' mode='aspectFit'></image>
+        <text>{{servers.proName}}</text>
+      </view>
+      <view class="items" class='pro-item'>
+        <view wx:for="{{se_items}}" class='p-i-item'>
+          <image src='{{item.src}}' mode='aspectFit'></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

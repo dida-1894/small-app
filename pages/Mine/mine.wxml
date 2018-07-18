@@ -1,0 +1,28 @@
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+    <view class='user-bottom'>
+      <image src='../../assets/4-me_03.png' mode='aspectFill'></image>
+      <text>积分 0</text>
+      <text class='right'>去购物抵扣 > </text>
+    </view>
+  </view>
+  <view class='deals'>
+    <view class='deals-title'>{{deals.title}}</view>
+    <view class='servers'>
+      <view wx:for="{{deals.servers}}" class='ser-item'>
+      <image src="{{item.src}}" mode='aspectFill'></image>
+      <view>{{item.name}}</view>
+      </view>
+    </view>
+  </view>
+  <view class='my' wx:for="{{list}}">
+    <image src='{{item.src}}' mode='aspectFill'></image>
+    <text>{{item.name}}</text>
+    <text class='right'>></text>
+  </view>
+</view>

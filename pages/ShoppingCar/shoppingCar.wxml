@@ -1,0 +1,20 @@
+<view class='container'>
+  <view class='ii' wx:for="{{list}}">
+    <radio></radio>
+    <image src='{{item.src}}' mode='aspectFill'></image>
+    <view class='buyMsg'>
+      <text class='name'>{{item.name}}</text>
+      <view class='msg'>{{item.msg}}</view>
+      <view>
+        <text>x{{item.num}}</text>
+        <text class='price'>${{item.price}}</text>
+      </view>
+    </view>
+  </view>
+  <view class='nav-bottom'>
+    <radio>总选</radio>
+    <text>总计：￥0</text>
+    <button class='btn writter'>编辑</button>
+    <button class='btn count'>总结</button>
+  </view>
+</view>

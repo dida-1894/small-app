@@ -1,0 +1,45 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/Mine/mine",
+    "pages/ShoppingCar/shoppingCar",
+    "pages/Sort/sort"
+  ],
+  "window":{
+    
+  },
+  "tabBar": {
+      "list": [
+        {
+          "pagePath": "pages/index/index",
+          "text": "首页",
+          "iconPath": "./assets/index0.png",
+          "selectedIconPath": "./assets/index1.png"
+
+        },
+        {
+          "pagePath": "pages/Mine/mine",
+          "text": "我的",
+          "iconPath": "./assets/my0.png",
+          "selectedIconPath": "./assets/my1.png"
+        },
+        {
+          "pagePath": "pages/ShoppingCar/shoppingCar",
+          "text": "购物车",
+          "iconPath": "./assets/shop0.png",
+          "selectedIconPath": "./assets/shop1.png"
+        },
+        {
+          "pagePath": "pages/Sort/sort",
+          "text": "分类",
+          "iconPath": "./assets/logs0.png",
+          "selectedIconPath": "./assets/logs1.png"
+        }
+      ]
+    },
+    "networkTimeout": {
+      "request": 10000,
+      "downloadFile": 10000
+    },
+    "debug": true
+}
